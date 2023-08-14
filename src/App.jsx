@@ -12,8 +12,13 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newLocation = e.target.newLocation.value;
-    fetchDimension(newLocation);
-    document.getElementById("myForm").reset();
+
+    if (newLocation.trim() === "") {
+      alert("Please enter a dimension ❌");
+    } else {
+      fetchDimension(newLocation);
+      document.getElementById("myForm").reset();
+    }
   };
 
   const fetchDimension = (idLocation) => {
