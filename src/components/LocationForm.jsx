@@ -1,8 +1,9 @@
 const LocationForm = ({ handleSubmit }) => {
   return (
     <form
+      id="myForm"
       className="border-[3px]
-       border-[#8EFF8B] text-[5px] flex  items-center  rounded-md  justify-center "
+       border-[#8EFF8B] text-[5px] flex  items-center  rounded-md   "
       onSubmit={handleSubmit}
     >
       <input
@@ -13,7 +14,7 @@ const LocationForm = ({ handleSubmit }) => {
         placeholder="Type a location id ..."
         type="number"
       />
-      <button className=" p-2  bg-[#8EFF8B]/25   w-[50px]">
+      <button className="cursor-pointer p-2  bg-[#8EFF8B]/25   w-[50px]">
         <i className="bx bx-search-alt-2 text-xl   "></i>
       </button>
     </form>

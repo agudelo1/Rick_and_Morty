@@ -13,6 +13,7 @@ function App() {
     e.preventDefault();
     const newLocation = e.target.newLocation.value;
     fetchDimension(newLocation);
+    document.getElementById("myForm").reset();
   };
 
   const fetchDimension = (idLocation) => {
@@ -31,16 +32,16 @@ function App() {
   return (
     <main
       className=" bg-[url('/img/backgroundpage.png')] bg-center bg-cover bg-no-repeat  text-white 
-    grid "
+    sm:grid justify-center"
     >
-      <header className="justify-center items-center h-[250px] ">
-        <img className="px-4 absolute" src="/img/logoHeader.png" alt="" />
+      <header className="justify-center items-center h-[250px] sm:mx-auto ">
+        <img className="px-4 absolute " src="/img/logoHeader.png" alt="" />
         <img className="relative p-2 py-4" src="/img/nombre1.png" alt="" />
       </header>
       <section className="p-4 py-6 grid gap-10">
         <LocationForm handleSubmit={handleSubmit} />
         <LocationInfo currentLocation={currentLocation} />
-        <h2 className="flex  justify-center text-[#8EFF8B] font-fira-Code text-[14px]">
+        <h2 className="flex  justify-center text-[#8EFF8B] font-fira-Code text-[14px] sm:text-[20px]">
           ¡Wellcome to the crazy universe!
         </h2>
         <ResidentList

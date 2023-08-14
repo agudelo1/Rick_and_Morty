@@ -31,8 +31,9 @@ const ResidentList = ({ residents, currentLocation }) => {
   return (
     <section>
       <section
-        className=" grid gap-6 justify-center sm:grid-cols-[repeat(auto-fill,_260px)]
-       max-w-[1200px] mx-auto"
+        className="pt-10 grid gap-6 justify-center
+         sm:grid-cols-[repeat(auto-fill,_260px)]
+       max-w-[1024px] mx-auto"
       >
         {residentsInPage.map((resident) => (
           <ResidentCard residentUrl={resident} key={resident} />

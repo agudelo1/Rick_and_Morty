@@ -18,16 +18,16 @@ const ResidentCard = ({ residentUrl }) => {
   }, []);
 
   return (
-    <article className="bg-black/20 border-[3px]   border-[#8EFF8B]">
-      <header className="grid relative ">
+    <article className="bg-black/20 border-[3px] border-[#8EFF8B] overflow-hidden w-[260px]">
+      <header className="grid relative w-[260px] h-[300px] ">
         <img
-          className="border-b-[3px]   border-[#8EFF8B] h-full w-full object-cover"
+          className="border-b-[3px] border-[#8EFF8B] h-full w-full object-cover "
           src={residentInfo?.image}
           alt=""
         />
         <div
           className="border-[3px] absolute top-[210px] bg-black/60
-         left-[70px] border-[#8EFF8B] h-[42px] w-[150px]
+         left-[52px] border-[#8EFF8B] h-[42px] w-[150px]
           flex items-center gap-2 p-2 justify-center font-fira-Code text-[14px] "
         >
           <div
@@ -38,8 +38,8 @@ const ResidentCard = ({ residentUrl }) => {
           {residentInfo?.status}
         </div>
       </header>
-      <section className="p-2 ">
-        <h3 className="font-fira-Code mb-2 text-[20px] line-clamp-1 flex justify-center ">
+      <section className="p-2 py-4 ">
+        <h3 className="font-fira-Code mb-2 text-[20px] flex justify-center line-clamp-1 sm:line-clamp-1">
           {residentInfo?.name}
         </h3>
         <hr className="bg-[#084851] border-[1px]" />
