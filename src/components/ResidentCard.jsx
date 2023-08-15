@@ -19,7 +19,7 @@ const ResidentCard = ({ residentUrl }) => {
 
   return (
     <article className="bg-black/20 border-[3px] border-[#8EFF8B] overflow-hidden w-[260px]">
-      <header className="grid relative w-[260px] h-[300px] ">
+      <header className="flex justify-center items-center relative w-[260px] h-[300px] ">
         <img
           className="border-b-[3px] border-[#8EFF8B] h-full w-full object-cover "
           src={residentInfo?.image}
@@ -27,7 +27,7 @@ const ResidentCard = ({ residentUrl }) => {
         />
         <div
           className="border-[3px] absolute top-[210px] bg-black/60
-         left-[52px] border-[#8EFF8B] h-[42px] w-[150px]
+         border-[#8EFF8B] h-[42px] w-[150px]
           flex items-center gap-2 p-2 justify-center font-fira-Code text-[14px] "
         >
           <div

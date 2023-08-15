@@ -36,17 +36,21 @@ function App() {
 
   return (
     <main
-      className=" bg-[url('/img/backgroundpage.png')] bg-center bg-cover bg-no-repeat  text-white 
-    sm:grid justify-center"
+      className="relative w-full min-h-screen flex flex-col items-center bg-[url('/img/backgroundpage.png')] bg-center bg-cover bg-no-repeat  text-white 
+     justify-center"
     >
-      <header className="justify-center items-center h-[250px] sm:mx-auto ">
-        <img className="px-4 absolute " src="/img/logoHeader.png" alt="" />
-        <img className="relative p-2 py-4" src="/img/nombre1.png" alt="" />
+      <header className="z-10 top-0 absolute h-[250px] sm:mx-auto ">
+        <img className="px-4" src="/img/logoHeader.png" alt="" />
+        <img
+          className="absolute top-0 p-2 py-4"
+          src="/img/nombre1.png"
+          alt=""
+        />
       </header>
-      <section className="p-4 py-6 grid gap-10">
+      <section className="p-4 py-6 sm:mt-60  mt-56 grid gap-10 w-11/12">
         <LocationForm handleSubmit={handleSubmit} />
         <LocationInfo currentLocation={currentLocation} />
-        <h2 className="flex  justify-center text-[#8EFF8B] font-fira-Code text-[14px] sm:text-[20px]">
+        <h2 className="flex justify-center text-[#8EFF8B] font-fira-Code text-[13px] sm:text-[25px]">
           ¡Wellcome to the crazy universe!
         </h2>
         <ResidentList

@@ -2,12 +2,11 @@ const LocationForm = ({ handleSubmit }) => {
   return (
     <form
       id="myForm"
-      className="border-[3px]
-       border-[#8EFF8B] text-[5px] flex  items-center  rounded-md   "
+      className="border-[3px] border-[#8EFF8B] text-[5px] flex  items-center  rounded-md w-full sm:mx-auto sm:w-[500px]"
       onSubmit={handleSubmit}
     >
       <input
-        className="outline-none font-fira-Code text-[15px] text-white bg-black p-[8.5px] flex-1 "
+        className="w-2/3 outline-none font-fira-Code text-[15px] text-white bg-black p-[8.5px] flex-1 "
         id="newLocation"
         min={1}
         max={126}
