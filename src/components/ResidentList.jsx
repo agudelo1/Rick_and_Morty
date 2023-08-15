@@ -29,7 +29,7 @@ const ResidentList = ({ residents, currentLocation }) => {
   }, [currentLocation]);
 
   return (
-    <section className="flex flex-col  w-full max-w-[1024px]">
+    <section className="flex flex-col mx-auto  w-full max-w-[1024px]">
       <section
         className="grid gap-6 justify-around
          grid-cols-[repeat(auto-fill,_260px)]

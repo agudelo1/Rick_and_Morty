@@ -6,6 +6,11 @@ import LocationForm from "./components/LocationForm";
 import LocationInfo from "./components/LocationInfo";
 import ResidentList from "./components/ResidentList";
 
+const data = [
+  { pais: "Brazil", presidente: "Cristian" },
+  { pais: "Colombia", presidente: "Agudelo" },
+];
+
 function App() {
   const [currentLocation, setCurrentLocation] = useState(null);
 
